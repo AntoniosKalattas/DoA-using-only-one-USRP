@@ -1,0 +1,13 @@
+# Data / artifacts are kept out of the repo
+*.csv
+*.bin
+*.pkl
+*.png
+*.jpg
+*.mp4
+*.pdf
+iq_datasets/**/*.json
+.venv/
+__pycache__/
+.idea/
+.DS_Store
