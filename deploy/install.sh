@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # USRP Capture Console - setup wizard for macOS and Linux (native, no Docker).
 #
-#   curl -fsSL https://github.com/AntoniosKalattas/Thesis-/releases/latest/download/install.sh | bash
+#   curl -fsSL https://github.com/AntoniosKalattas/DoA-using-only-one-USRP/releases/latest/download/install.sh | bash
 #   ./deploy/install.sh            (from a checkout: uses that checkout instead of downloading)
 #   ... | bash -s -- --yes         (accept every default, no questions)
 #
@@ -9,7 +9,7 @@
 #        6 launcher  7 phone app link. Safe to run again: it updates and re-checks.
 set -euo pipefail
 
-REPO="AntoniosKalattas/Thesis-"
+REPO="AntoniosKalattas/DoA-using-only-one-USRP"
 DEST="${USRP_CONSOLE_DIR:-$HOME/usrp-console}"
 YES=0
 for a in "$@"; do

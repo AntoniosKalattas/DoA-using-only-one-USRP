@@ -5,8 +5,8 @@
 **Thesis project, University of Cyprus, Computer Science.**
 Live direction finding of Bluetooth LE devices with a 2-antenna USRP B210, plus drone RF traffic analysis, jamming, replay and GPS-spoofing experiments.
 
-[![Latest release](https://img.shields.io/github/v/release/AntoniosKalattas/Thesis-?label=release&color=2a78d6)](https://github.com/AntoniosKalattas/Thesis-/releases/latest)
-[![Release pipeline](https://img.shields.io/github/actions/workflow/status/AntoniosKalattas/Thesis-/release.yml?label=release%20build)](https://github.com/AntoniosKalattas/Thesis-/actions/workflows/release.yml)
+[![Latest release](https://img.shields.io/github/v/release/AntoniosKalattas/DoA-using-only-one-USRP?label=release&color=2a78d6)](https://github.com/AntoniosKalattas/DoA-using-only-one-USRP/releases/latest)
+[![Release pipeline](https://img.shields.io/github/actions/workflow/status/AntoniosKalattas/DoA-using-only-one-USRP/release.yml?label=release%20build)](https://github.com/AntoniosKalattas/DoA-using-only-one-USRP/actions/workflows/release.yml)
 ![Platforms](https://img.shields.io/badge/runs%20on-macOS%20%C2%B7%20Linux%20%C2%B7%20Windows%20%C2%B7%20Android-52514e)
 
 <img src="docs/images/unit_head.png" alt="3D model of the field unit: two upright antennas on a printed bracket with a laser sight, the B210 hung on the tripod column" width="760">
@@ -33,9 +33,9 @@ A phone (or any BLE device) advertises. The B210 receives it on **two coherent a
 
 | | |
 |---|---|
-| <img src="docs/images/apk_qr.png" width="150" alt="QR code: download the Android app"> | **Phone app (Android):** scan the QR code, or open [UsrpBeacon.apk](https://github.com/AntoniosKalattas/Thesis-/releases/latest/download/UsrpBeacon.apk) on the phone and install it. iPhone: build `ios/UsrpBeacon` in Xcode. |
-| **macOS / Linux** | `curl -fsSL https://github.com/AntoniosKalattas/Thesis-/releases/latest/download/install.sh \| bash` |
-| **Windows 10/11** | PowerShell: `irm https://github.com/AntoniosKalattas/Thesis-/releases/latest/download/install.ps1 \| iex` |
+| <img src="docs/images/apk_qr.png" width="150" alt="QR code: download the Android app"> | **Phone app (Android):** scan the QR code, or open [UsrpBeacon.apk](https://github.com/AntoniosKalattas/DoA-using-only-one-USRP/releases/latest/download/UsrpBeacon.apk) on the phone and install it. iPhone: build `ios/UsrpBeacon` in Xcode. |
+| **macOS / Linux** | `curl -fsSL https://github.com/AntoniosKalattas/DoA-using-only-one-USRP/releases/latest/download/install.sh \| bash` |
+| **Windows 10/11** | PowerShell: `irm https://github.com/AntoniosKalattas/DoA-using-only-one-USRP/releases/latest/download/install.ps1 \| iex` |
 | **Docker (Linux)** | `docker pull ghcr.io/antonioskalattas/usrp-console:latest`, then `docker compose -f docker/docker-compose.yml up -d` |
 
 The setup wizards check and install what's missing: UHD and the B210 firmware, a Python

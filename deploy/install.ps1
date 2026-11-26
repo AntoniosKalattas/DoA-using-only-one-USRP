@@ -1,12 +1,12 @@
 # USRP Capture Console - one-line installer for Windows 10/11.
 #
-#   irm https://github.com/AntoniosKalattas/Thesis-/releases/latest/download/install.ps1 | iex
+#   irm https://github.com/AntoniosKalattas/DoA-using-only-one-USRP/releases/latest/download/install.ps1 | iex
 #
 # Downloads the latest Windows bundle from GitHub Releases into %USERPROFILE%\usrp-console,
 # keeps your .env (ngrok token) from an earlier install, then runs the setup wizard (setup.ps1):
 # Ubuntu for WSL2 -> Docker Engine -> radar container -> B210 over usbipd -> phone link.
 $ErrorActionPreference = "Stop"
-$Repo   = "AntoniosKalattas/Thesis-"
+$Repo   = "AntoniosKalattas/DoA-using-only-one-USRP"
 $Dest   = Join-Path $env:USERPROFILE "usrp-console"
 $Bundle = "https://github.com/$Repo/releases/latest/download/usrp-console-windows.zip"
 

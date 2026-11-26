@@ -1,6 +1,6 @@
 # USRP Capture Console on Windows (plug and play)
 
-Fastest install (PowerShell): `irm https://github.com/AntoniosKalattas/Thesis-/releases/latest/download/install.ps1 | iex`
+Fastest install (PowerShell): `irm https://github.com/AntoniosKalattas/DoA-using-only-one-USRP/releases/latest/download/install.ps1 | iex`
 
 ## Use it
 1. Plug the **USRP B210** into a **USB 3 (blue) port**.
@@ -33,8 +33,8 @@ usbipd-win. Windows asks for permission for those.
 | `wsl/` | small Linux scripts the launcher runs inside Ubuntu |
 | `usrp-console-image.tar.gz` | *(optional, offline only)* the Docker image; without it the image is pulled from `ghcr.io/antonioskalattas/usrp-console` |
 | `docker-compose.yml` | ports, USB access, saved calibrations |
-| phone app | `UsrpBeacon.apk` from the [latest release](https://github.com/AntoniosKalattas/Thesis-/releases/latest) |
-| source | the [GitHub repo](https://github.com/AntoniosKalattas/Thesis-) |
+| phone app | `UsrpBeacon.apk` from the [latest release](https://github.com/AntoniosKalattas/DoA-using-only-one-USRP/releases/latest) |
+| source | the [GitHub repo](https://github.com/AntoniosKalattas/DoA-using-only-one-USRP) |
 
 ## If something doesn't work
 - Radar says **"USRP: not connected"**: run START-HERE.bat again with the B210 plugged in, and
