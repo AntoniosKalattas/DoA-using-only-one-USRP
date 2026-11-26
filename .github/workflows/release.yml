@@ -104,10 +104,12 @@ jobs:
           cache-to: type=gha,mode=max
       - name: Smoke test (console answers on :8099)
         run: |
-          docker tag "$IMAGE:latest" usrp-console:latest
-          docker run -d --name t -p 8099:8099 usrp-console:latest
+          fail() { echo "::error title=Smoke test failed::$(echo "$1" | tr '\n' ' ' | cut -c1-3500)"; exit 1; }
+          docker images --format '{{.Repository}}:{{.Tag}}' | grep -i usrp || true
+          out=$(docker tag "$IMAGE:latest" usrp-console:latest 2>&1) || fail "docker tag: $out"
+          out=$(docker run -d --name t -p 8099:8099 usrp-console:latest 2>&1) || fail "docker run: $out"
           for i in $(seq 1 30); do curl -fs localhost:8099/radar >/dev/null && break; sleep 1; done
-          curl -fs localhost:8099/radar >/dev/null || { docker logs t; exit 1; }
+          curl -fs localhost:8099/radar >/dev/null || fail "no answer on :8099. logs: $(docker logs t 2>&1 | tail -20)"
           docker rm -f t
       - name: Offline image file
         run: docker save usrp-console:latest | gzip -1 > usrp-console-image.tar.gz
