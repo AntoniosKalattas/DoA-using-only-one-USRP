@@ -1,0 +1,9 @@
+REAL FLIGHT SIGNAL RECOVERY REPORT
+================================
+Input file: fly_away_nocamera_10.0ms_20260326_105417.csv
+Rows/windows: 2276
+Global amp slope/window: -0.0000000289
+Composite threshold: 2.0
+Active segments found: 3
+Total active windows: 834 (36.64%)\nMedian segment length: 141.0 windows\nMean rel-distance change per segment: 0.0549\n\nInterpretation notes:
+- This analysis does NOT use absolute path-loss distance calibration.\n- It extracts drone-like activity epochs vs no-drone baseline and tracks relative distance trend.\n

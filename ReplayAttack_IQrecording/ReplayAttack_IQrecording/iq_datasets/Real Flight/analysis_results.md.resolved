@@ -1,0 +1,18 @@
+# Detailed Analysis Results
+
+I've performed the requested fingerprint and power distance correlation analyses on the current camera flight data (`real_flight_camera_10ms_20260406_114320.csv`), using the stationary noise and idle drone captures as baselines similar to your previous plots.
+
+## Power-Distance Correlation (Aligned Flat Point)
+
+The power and estimated distance are smoothed using a rolling window, and the flat point (saturation point) is automatically detected where the distance proxy reaches its peaks. The alignment identifies the exact window where the drop flattens out around -66dB, replicating the format of your previous tests.
+
+![Power Distance Correlation Plot](/root/.gemini/antigravity/brain/2c78ead2-9609-4930-b7b1-ecd04b7f473e/artifacts/power_distance_correlation_plot_aligned.png)
+
+## Fingerprint Analysis Comparison
+
+This detailed feature matrix shows random amplitude windows, fingerprint heatmaps, and a cosine-similarity timeline between windows. It provides a direct view into the signal structural consistency between the camera flight data and your chosen noise or idle baseline sets. 
+
+![Fingerprint Analysis](/root/.gemini/antigravity/brain/2c78ead2-9609-4930-b7b1-ecd04b7f473e/artifacts/fingerprint_analysis_main_flight_vs_baselines.png)
+
+> [!NOTE]
+> The scripts for generating these customized views are saved as `detailed_analysis_camera.py` in your `iq_datasets/` folder for your future runs!

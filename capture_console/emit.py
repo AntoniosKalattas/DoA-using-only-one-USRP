@@ -22,7 +22,7 @@ FEED_FILE = Path(__file__).resolve().parent / "feed.jsonl"
 
 
 def emit_detection(angle, distance, conf=1.0, id="drone", label=None,
-                   source="live", feed_file=FEED_FILE):
+                   source="live", feed_file=FEED_FILE, **extra):
     """Append one detection. angle in deg (-90..90), distance in meters."""
     rec = {
         "id": str(id),
@@ -33,6 +33,7 @@ def emit_detection(angle, distance, conf=1.0, id="drone", label=None,
         "source": source,
         "t": time.time(),
     }
+    rec.update(extra)          # optional summary fields (addr, bearing_std, rate, ...)
     with open(feed_file, "a") as f:
         f.write(json.dumps(rec) + "\n")
     return rec

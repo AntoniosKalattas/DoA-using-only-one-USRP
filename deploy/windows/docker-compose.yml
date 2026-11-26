@@ -1,0 +1,32 @@
+# USRP Capture Console - Windows bundle. wsl/start-console.sh provides the image
+# (pulled from ghcr.io/antonioskalattas/usrp-console, or loaded from usrp-console-image.tar.gz
+# if that file sits next to this one) and tags it usrp-console:latest.
+services:
+  console:
+    image: usrp-console:latest
+    container_name: usrp-console
+    restart: unless-stopped
+    privileged: true                      # USB access for the B210
+    volumes:
+      - /dev/bus/usb:/dev/bus/usb         # the B210, forwarded by usb-link.ps1
+      - cal_presets:/app/capture_console/cal_presets
+      - phone_logs:/app/capture_console/phone_logs
+    ports:
+      - "127.0.0.1:8099:8099"             # console + radar (this PC only)
+      - "127.0.0.1:5080:5080"             # phone ingest (ngrok forwards here)
+      - "5005:5005/udp"                   # phone over local Wi-Fi (UDP mode)
+
+  ngrok:
+    image: ngrok/ngrok:3
+    profiles: ["ngrok"]
+    restart: unless-stopped
+    depends_on: [console]
+    environment:
+      NGROK_AUTHTOKEN: ${NGROK_AUTHTOKEN:-}   # from .env (only needed with --profile ngrok)
+    command: ["http", "console:5080", "--log", "stdout"]
+    ports:
+      - "127.0.0.1:4040:4040"             # http://localhost:4040 shows the public link
+
+volumes:
+  cal_presets:
+  phone_logs:

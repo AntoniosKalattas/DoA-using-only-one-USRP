@@ -1,0 +1,35 @@
+REAL FLIGHT CAMERA IQ ANALYSIS — APRIL 6, 2026
+============================================================
+
+DATASETS:
+  Flight1_11:43: 454 samples, 78.8s
+  Flight2_11:46: 499 samples, 86.2s
+  Flight3_11:48: 2584 samples, 453.4s
+  TakeOff_12:11: 2406 samples, 416.3s
+
+DATA QUALITY:
+  Flight1_11:43: 174.0ms interval, 51.8% active, 7.68dB range
+  Flight2_11:46: 173.0ms interval, 35.1% active, 10.98dB range
+  Flight3_11:48: 175.5ms interval, 45.6% active, 21.28dB range
+  TakeOff_12:11: 173.1ms interval, 36.8% active, 13.52dB range
+
+DISTANCE ANALYSIS:
+  Flight1_11:43: range=0.9843-1.0301 (Δ=0.0458), far=10, close=9
+  Flight2_11:46: range=0.9725-1.0329 (Δ=0.0604), far=7, close=7
+  Flight3_11:48: range=0.9769-1.0677 (Δ=0.0909), far=49, close=47
+  TakeOff_12:11: range=0.9775-1.0410 (Δ=0.0635), far=25, close=26
+
+LANDING DETECTION:
+  Flight1_11:43: NOT DETECTED (power_stabilized)
+  Flight2_11:46: DETECTED (power_stabilized, power_increased)
+  Flight3_11:48: NOT DETECTED (power_increased)
+  TakeOff_12:11: NOT DETECTED (power_increased)
+
+FINGERPRINT CONSISTENCY:
+  Flight1_11:43 <-> Flight2_11:46: 0.999989
+  Flight1_11:43 <-> Flight3_11:48: 0.999990
+  Flight1_11:43 <-> TakeOff_12:11: 0.999992
+  Flight2_11:46 <-> Flight3_11:48: 0.999988
+  Flight2_11:46 <-> TakeOff_12:11: 0.999989
+  Flight3_11:48 <-> TakeOff_12:11: 0.999988
+  Mean cross-flight similarity: 0.999989

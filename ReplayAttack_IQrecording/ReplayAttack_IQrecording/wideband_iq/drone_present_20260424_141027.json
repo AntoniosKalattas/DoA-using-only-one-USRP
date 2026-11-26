@@ -1,0 +1,11 @@
+{
+  "state": "drone_present",
+  "freq_hz": 5787500000.0,
+  "rate_hz": 40000000.0,
+  "gain_db": 60,
+  "duration_s": 5.0,
+  "actual_duration_s": 10.549,
+  "n_samples": 185841621,
+  "dtype": "complex64",
+  "timestamp": "20260424_141027"
+}

@@ -1,0 +1,3 @@
+Aligned flat-line plot generated
+shared_flat_window: 557
+Both blue (power) and red (distance) dashed lines are forced to the same x-position.

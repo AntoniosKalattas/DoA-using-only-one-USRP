@@ -1,0 +1,7 @@
+{
+  "state": "hover",
+  "frequency_ghz": "5.8",
+  "duration_seconds": 60.10698413848877,
+  "timestamp": "20260130_140503",
+  "output_file": "../dataset/data/captures/hover_5.8ghz_20260130_140503.csv"
+}

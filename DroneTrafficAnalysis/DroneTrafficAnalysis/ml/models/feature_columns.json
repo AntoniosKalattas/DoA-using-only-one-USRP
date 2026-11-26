@@ -1,0 +1,1 @@
+["mean_power_db", "std_power_db", "max_power_db", "min_power_db", "peak_freq_offset_hz", "bandwidth_3db_hz", "spectral_entropy", "spectral_flatness", "power_variance_rate", "signal_presence"]

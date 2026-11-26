@@ -1,0 +1,4 @@
+p_ref (median first 30 windows): -63.904 dB\nn=2.00, ref_dist_m=3.00, hold_last=True\n\n min_conf  reliable_windows_pct  first_unreliable_window  gated_distance_mean_m  gated_distance_median_m
+     0.25             15.773286                       84               3.438204                 3.449512
+     0.35              5.228471                       10               3.176434                 3.195658
+     0.45              0.000000                        0                    NaN                      NaN\n\nRecommended practical threshold (target ~5-15% reliable in this weak run): 0.35

@@ -1,0 +1,7 @@
+total_windows: 2276
+loss_start_window_idx: 782
+loss_start_approx_distance_m: 17.1868
+loss_start_fraction_of_capture: 0.3437
+baseline_active_ratio_median: 0.050250
+active_ratio_threshold_60pct: 0.030150
+flat_slope_threshold_db_per_100win: 0.0300

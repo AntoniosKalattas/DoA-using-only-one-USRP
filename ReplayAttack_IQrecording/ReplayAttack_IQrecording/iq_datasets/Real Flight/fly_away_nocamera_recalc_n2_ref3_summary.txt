@@ -1,0 +1,6 @@
+Recalculated distance with requested parameters
+n=2.00, ref_dist_m=3.00, ref_power_db(auto first window)=-62.909
+
+new_est_distance_m_n2_ref3: mean=4.204, median=4.319, min=2.694, max=4.407
+percent_windows_in_30_to_50m=0.00%
+old_est_distance_m: mean=1.359, median=1.393, min=0.907, max=1.419

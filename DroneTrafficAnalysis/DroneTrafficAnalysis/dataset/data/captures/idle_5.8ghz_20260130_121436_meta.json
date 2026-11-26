@@ -1,0 +1,7 @@
+{
+  "state": "idle",
+  "frequency_ghz": "5.8",
+  "duration_seconds": 60.0975022315979,
+  "timestamp": "20260130_121436",
+  "output_file": "../dataset/data/captures/idle_5.8ghz_20260130_121436.csv"
+}

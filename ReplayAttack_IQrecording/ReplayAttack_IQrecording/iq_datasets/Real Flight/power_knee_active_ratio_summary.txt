@@ -1,0 +1,6 @@
+knee_index: 768
+knee_distance_assumed_m: 36.7516
+power_delta_early_to_late_db: -0.7112
+active_ratio_delta_early_to_late: -0.015970
+ref_power_db_1m_anchor: -32.0381
+path_loss_n_expected: 2.20

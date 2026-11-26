@@ -1,0 +1,12 @@
+REAL FLIGHT NOISE VS DRONE-LIKE ANALYSIS
+=====================================
+Input: fly_away_nocamera_10.0ms_20260326_105417.csv
+Baseline: no_drone_10ms_20260303_121416.csv
+
+  active_ratio: baseline mean=0.015457, std=0.001377
+  amp_mean: baseline mean=0.000434, std=0.000005
+  fp_cosine_sim: baseline mean=0.998484, std=0.017285
+
+Flagged drone-like windows: 32.16%
+Composite score mean/std: 5.064 / 8.845
+Heuristic: active_ratio_z_roll>3 OR amp_mean_z_roll>3 OR composite>2

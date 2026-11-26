@@ -1,0 +1,1 @@
+p_ref_median_first_30_windows: -63.904 dB\nn: 2.00, ref_dist_m: 3.00\nmin_confidence: 0.35, hold_last: True\nreliable_windows_pct: 5.23%\nfirst_unreliable_window: 10\nraw_distance_mean_m: 3.749\ngated_distance_mean_m: 3.176\n

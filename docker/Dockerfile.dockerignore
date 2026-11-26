@@ -1,0 +1,15 @@
+# Only ship code. Everything else (datasets, IQ recordings, PDFs, GPS_spoofing 7 GB) stays out.
+*
+!capture_console
+!DroneTrafficAnalysis/DroneTrafficAnalysis/capture/*.py
+!ReplayAttack_IQrecording/ReplayAttack_IQrecording/*.py
+capture_console/feed.jsonl
+capture_console/phone_logs
+capture_console/__pycache__
+capture_console/native/b210_stream
+capture_console/native/stream.err
+**/__pycache__
+**/*.pyc
+capture_console/recordings
+capture_console/usrp_site*.json*
+capture_console/*.bak*

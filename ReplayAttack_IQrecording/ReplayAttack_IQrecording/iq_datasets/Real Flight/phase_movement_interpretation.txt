@@ -1,0 +1,13 @@
+PHASE DRIFT vs MOVEMENT TREND INTERPRETATION
+===========================================
+Input: fly_away_nocamera_10.0ms_20260326_105417.csv
+
+corr(phase_drift, amp_mean): -0.3027
+corr(phase_drift_delta, amp_delta): -0.1222
+corr(smoothed phase_drift, smoothed amp_mean): -0.7119
+best lag (phase_delta -> amp_delta): -4 windows
+best lag correlation: -0.7968
+
+Notes:
+- A strong, stable linear correlation is not expected in weak-SNR real-flight data.
+- Movement trend is primarily seen in amplitude slope; phase_drift can be noisy and multipath-sensitive.

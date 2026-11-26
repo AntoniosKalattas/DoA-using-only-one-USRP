@@ -1,0 +1,40 @@
+{
+  "accuracy": 0.96,
+  "n_features": 46,
+  "n_samples": 4500,
+  "classes": [
+    "no_camera_movement",
+    "no_drone",
+    "with_camera_movement"
+  ],
+  "feature_importance": {
+    "phase_drift": 0.10932559654330876,
+    "amp_ema": 0.08127299905528391,
+    "active_ratio": 0.06432903881729833,
+    "amp_p95": 0.059584134080044114,
+    "amp_phase_corr": 0.057670222114229806,
+    "active_samples": 0.04895876473775789,
+    "effective_size_bytes": 0.04395092107216611,
+    "amp_median": 0.043759191116068706,
+    "phase_entropy": 0.03844933295489074,
+    "amp_std": 0.03820389622544011,
+    "active_mean_db": 0.036614664438389094,
+    "amp_p05": 0.036174668157487266,
+    "amp_mean": 0.03578942251165864,
+    "duty_cycle": 0.034213204114844,
+    "max_power_db": 0.030890536086603047,
+    "amp_rms": 0.02802959129977408,
+    "burst_count": 0.02514076303577079,
+    "amp_max": 0.022468584981158828,
+    "amp_dynamic_range": 0.021155675086281727,
+    "mean_power_db": 0.020914385221328154,
+    "amp_trend_long": 0.014891648963036819,
+    "total_energy": 0.014862872732935963,
+    "amp_hist_1": 0.008215855230792903,
+    "active_energy": 0.007730853685363876,
+    "phase_drift_delta": 0.006967751296810435
+  },
+  "v1_features": 12,
+  "v2_features": 28,
+  "v3_features": 7
+}

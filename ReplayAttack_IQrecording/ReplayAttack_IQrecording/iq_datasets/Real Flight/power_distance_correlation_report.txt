@@ -1,0 +1,14 @@
+Power vs Distance Correlation (distance derived with n=2, ref=3m)
+pearson_raw: -0.998813
+spearman_raw: -1.000000
+pearson_smoothed: -0.999721
+spearman_smoothed: -1.000000
+pearson_slope: -0.997741
+spearman_slope: -0.999911
+flat_window_power: 557
+flat_window_distance: 801
+flat_window_delta: 244
+
+Interpretation:
+- Strong negative correlation is expected because distance is computed from power via a monotonic transform.
+- Matching flat windows confirms the same underlying signal transition point.

@@ -1,0 +1,21 @@
+{
+  "phase_deg": -70.65267371844692,
+  "ref_power_db": -34.815940856933594,
+  "phase_spread_deg": 8.751259347871567,
+  "n_bursts": 143,
+  "n_total": 143,
+  "quality": "good",
+  "freq": 2480000000.0,
+  "gain": 50.0,
+  "spacing_m": 0.065,
+  "flip": false,
+  "direction_check": "ok: 44\u00b0 right",
+  "notes": "made with the USRP Beacon phone app",
+  "device": "PHONE-1",
+  "device_desc": "USRP Beacon #1",
+  "antenna": "TX/RX",
+  "rfa_side": "left",
+  "name": "outside",
+  "t": 1795099613.1445498,
+  "created": "2026-11-19 16:46"
+}

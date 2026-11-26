@@ -11,3 +11,43 @@ iq_datasets/**/*.json
 __pycache__/
 .idea/
 .DS_Store
+
+# --- local data, never published (2026-11-26) ---
+capture_console/recordings/
+capture_console/phone_logs/
+capture_console/feed.jsonl
+capture_console/usrp_site.json
+capture_console/usrp_site_history.jsonl
+capture_console/cal_last_packets.jsonl
+capture_console/cal_last_poses.json
+capture_console/live_ctl.json
+capture_console/live_ctl_result.json
+capture_console/ble_cal.json
+*.bak
+*.bak-*
+.run/
+*.sc16
+*.c64
+*.iq
+.env
+# CAD viewer caches and raw snapshot dumps (curated images live in docs/images/)
+hardware/**/.*.glb
+hardware/**/snapshots/
+# images ARE allowed for the README
+!docs/images/*.png
+!docs/images/*.jpg
+# build outputs & local-only files
+.kotlin/
+*.apk
+*.aab
+*.jks
+*.keystore
+deploy/windows/*.tar.gz
+deploy/windows/source-code.zip
+deploy/windows/.env
+start-console.sh
+ngrok.log
+capture_console/native/b210_stream
+capture_console/native/stream.err
+xcuserdata/
+DerivedData/

@@ -1,0 +1,20 @@
+{
+  "phase_deg": -0.06258573271021034,
+  "ref_power_db": -19.376821517944336,
+  "phase_spread_deg": 10.598544589510697,
+  "n_bursts": 38,
+  "n_total": 43,
+  "quality": "good",
+  "freq": 2480000000,
+  "gain": 50,
+  "spacing_m": 0.07,
+  "flip": true,
+  "direction_check": "flipped: read 36\u00b0 left (RF A side)",
+  "device": "68:C6:2E:59:EA:E2",
+  "device_desc": "Apple Nearby",
+  "antenna": "TX/RX",
+  "rfa_side": "left",
+  "name": "livingRoom-iPhone",
+  "t": 1794345735.52045,
+  "created": "2026-11-10 23:22"
+}

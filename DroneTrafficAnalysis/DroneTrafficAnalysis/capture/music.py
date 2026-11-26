@@ -59,15 +59,11 @@ def steeringVector(wave_length, distance_d, num_elements):
 
 def evaluate_spectrum(steeringVector, noice_subspace):
     angles_deg = np.arange(-90, 91)
-    p_music = []
     if steeringVector.shape[0] != len(angles_deg):
         steeringVector = steeringVector.T
-    for a in steeringVector:
-        a = a[:, np.newaxis]
-        a_H = a.conj().T
-        denom = a_H @ noice_subspace @ noice_subspace.conj().T @ a
-        p_music.append(1.0 / np.abs(denom[0, 0]))
-    p_music = np.array(p_music)
+    # P(theta) = 1 / (a^H En En^H a) = 1 / ||En^H a||^2, for all angles at once
+    proj = steeringVector.conj() @ noice_subspace                # (n_angles, n_noise)
+    p_music = 1.0 / np.sum(np.abs(proj) ** 2, axis=1)
     return angles_deg, p_music
 
 

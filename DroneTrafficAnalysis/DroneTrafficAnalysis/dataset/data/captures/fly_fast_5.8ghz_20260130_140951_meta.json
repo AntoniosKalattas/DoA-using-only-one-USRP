@@ -1,0 +1,7 @@
+{
+  "state": "fly_fast",
+  "frequency_ghz": "5.8",
+  "duration_seconds": 60.106269121170044,
+  "timestamp": "20260130_140951",
+  "output_file": "../dataset/data/captures/fly_fast_5.8ghz_20260130_140951.csv"
+}

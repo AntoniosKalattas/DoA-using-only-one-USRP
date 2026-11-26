@@ -1,0 +1,21 @@
+{
+  "phase_deg": 28.448372157435642,
+  "ref_power_db": -11.320791244506836,
+  "phase_spread_deg": 7.224689106621234,
+  "n_bursts": 59,
+  "n_total": 59,
+  "quality": "good",
+  "freq": 2480000000.0,
+  "gain": 50.0,
+  "spacing_m": 0.07,
+  "flip": true,
+  "direction_check": "flipped: read 24\u00b0 left",
+  "notes": "made with the USRP Beacon phone app",
+  "device": "PHONE-1",
+  "device_desc": "USRP Beacon #1",
+  "antenna": "TX/RX",
+  "rfa_side": "left",
+  "name": "phone-1114-2252",
+  "t": 1794690509.856508,
+  "created": "2026-11-14 23:08"
+}

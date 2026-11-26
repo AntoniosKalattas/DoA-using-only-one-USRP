@@ -1,0 +1,6 @@
+Camera flight reprocessing — noise_floor_db=-70.0, min_conf=0.25
+
+                                       file  windows  p_ref_dB  noise_floor  reliable_old_%  reliable_new_%  mean_confidence  gated_mean_m  gated_median_m
+real_flight_camera_10ms_20260406_114320.csv      454    -71.18        -70.0             0.9             5.5            0.035          1.62            1.69
+real_flight_camera_10ms_20260406_114626.csv      499    -71.07        -70.0             2.6             2.6            0.024          1.22            1.23
+real_flight_camera_10ms_20260406_114837.csv     2584    -70.84        -70.0             5.3             6.6            0.058          1.39            1.33
