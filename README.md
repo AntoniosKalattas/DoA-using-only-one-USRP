@@ -9,7 +9,7 @@ Live direction finding of Bluetooth LE devices with a 2-antenna USRP B210, plus 
 [![Release pipeline](https://img.shields.io/github/actions/workflow/status/AntoniosKalattas/DoA-using-only-one-USRP/release.yml?label=release%20build)](https://github.com/AntoniosKalattas/DoA-using-only-one-USRP/actions/workflows/release.yml)
 ![Platforms](https://img.shields.io/badge/runs%20on-macOS%20%C2%B7%20Linux%20%C2%B7%20Windows%20%C2%B7%20Android-52514e)
 
-<img src="docs/images/unit_head.png" alt="3D model of the field unit: two upright antennas on a printed bracket with a laser sight, the B210 hung on the tripod column" width="760">
+<img src="docs/images/pod_closeup.png" alt="3D model of the direction-finder pod on a camera tripod: two upright antennas and a laser sight on top, the B210 inside a printed cradle" width="760">
 
 </div>
 
@@ -59,27 +59,30 @@ Live run on 26 Nov 2026: the antennas on a table, the phone held at three tape-m
 | C, +44.5°, 9 m | +34° to +57° | 10.1–10.5 m |
 
 C is the weak spot: reflections squash the array's response on that side, so the correction has
-to stretch it and small wobbles grow. The tripod unit below is meant to fix that, by lifting the
+to stretch it and small wobbles grow. The tripod pod below is meant to fix that, by lifting the
 antennas clear of the table and the ground.
 
-## Field unit (3D model)
+## Field pod (3D model)
+
+The whole receiver is **one pod** that screws onto any camera tripod's **1/4"-20 screw**. The pod
+holds the antennas, the laser sight and the B210 in its box. No clamps, no custom tripod.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/images/unit_full.png" alt="Complete field unit on a tripod with the laser sight beam"></td>
-<td width="50%"><img src="docs/images/bracket.png" alt="Printed antenna bracket: plate with two SMA holes, laser holder and tripod hub"><br><img src="docs/images/clamp.png" alt="Printed hanger clamp: split ring with bolt ears and a mounting plate"></td>
+<td width="50%"><img src="docs/images/pod_front.png" alt="Pod on a tripod seen from the front: laser sight, USB cable and the two antennas"></td>
+<td width="50%"><img src="docs/images/pod_top.png" alt="Printed top plate: two SMA holes 60 mm apart on the rear overhang, laser holder at the front, four M3 holes"><br><img src="docs/images/pod_base.png" alt="Printed base cradle: floor with a hex pocket for the 1/4-20 nut, side rails, strap slots and four pillars"></td>
 </tr>
 </table>
 
 | Part | Notes |
 |---|---|
-| **Antenna bracket** *(printed)* | two SMA bulkheads exactly **60 mm** apart (λ/2 at 2.48 GHz, so no wrap-around), 12 mm laser on the boresight, ¼-20 heat-set insert |
-| **Hanger clamp** *(printed)* | split ring for a 28 mm tripod column, one M4 bolt; 4 × M3 holes for the B210 enclosure |
-| Tripod, B210 in a metal box, 2 × short SMA jumpers, USB 3 cable, laser module | bought parts (modelled as size envelopes) |
+| **Pod base** *(printed, 131 × 171 × 52 mm)* | cradle for the B210 box. A captive **1/4"-20 hex nut** (7/16") in the floor takes the tripod screw. Side rails, strap slots, open ends for the cables, and four pillars |
+| **Pod top** *(printed, 140 × 197 × 8 mm + laser holder)* | two SMA bulkheads exactly **60 mm** apart (λ/2 at 2.48 GHz, so no wrap-around) on a rear overhang, 12 mm laser on the boresight, 4 × M3 into the pillars |
+| B210 in a metal box, 2 × short SMA jumpers, 1/4"-20 nut, 4 × M3×16, velcro strap, laser module, any camera tripod | bought parts (modelled as size envelopes) |
 
-The STEP and STL files and the parametric build123d sources are in [`hardware/df_unit`](hardware/df_unit).
-Print in PETG or ASA with 4–5 walls. Before printing, measure your tripod column and your laser barrel:
-each is one parameter.
+The STEP and STL files and the parametric build123d sources are in [`hardware/df_unit`](hardware/df_unit). Print in PETG or ASA, floor or
+plate face-down, no supports. **Measure your B210 box first:** `ENC_W/ENC_L/ENC_H` in `pod_base.py`
+size the cradle. The earlier column-clamp design is kept in `hardware/df_unit/legacy_column_mount`.
 
 ## Repository
 
@@ -88,7 +91,7 @@ each is one parameter.
 | [`capture_console/`](capture_console) | web console + live radar: B210 streamer (C++/UHD), BLE decoder, MUSIC tracking, calibration, recording |
 | [`android/UsrpBeacon/`](android/UsrpBeacon) | Android phone app: BLE beacon, GPS / AR ground truth, calibration remote |
 | [`ios/`](ios) | iPhone versions: `UsrpBeacon` (beacon) and `UsrpSite` (GPS fix of the USRP's position) |
-| [`hardware/df_unit/`](hardware/df_unit) | 3D models of the tripod unit (STEP/STL + sources) |
+| [`hardware/df_unit/`](hardware/df_unit) | 3D models of the tripod pod (STEP/STL + sources) |
 | [`deploy/`](deploy) | setup wizards (`install.sh`, `install.ps1`) and the Windows one-click bundle |
 | [`docker/`](docker) | Capture Console image and compose file |
 | [`DroneTrafficAnalysis/`](DroneTrafficAnalysis) | DJI Mini RF traffic capture, feature extraction and ML state classification, MUSIC |
